@@ -6,18 +6,58 @@
     }
 
     #lox{
-        background-image: linear-gradient(to top, rgba(94, 52, 18, 1), rgb(207, 168, 95));
+        background-color: rgb(37, 37, 37);
         text-align: center;
+        color: white;
     }
     
     #mainButton{
         color: white;
         text-shadow: black 2px 2px 2px;
         text-decoration: none;
-        border: 2px solid rgba(94, 52, 18, 1);
+        border: 2px solid rgb(37, 37, 37);
         border-radius: 15%;
-        background-color: rgb(207, 168, 95);
+        background-color: rgb(175, 175, 175);
         padding: 10px;
-        /*margin: 100px;
-        margin-bottom: 1000%;*/
+        margin: 20px;
     }
+
+    iframe{
+        width: 100%;
+        height: 200px;
+        overflow: auto;
+        border: none;
+    }
+
+    #cross{
+        text-align: right;
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 25%;
+        top: 20%;
+        width: 50%;
+        height: 40%;
+        overflow: auto;
+        background-color: rgba(175, 175, 175, 0.95);
+        color: black;
+        border-radius: 2%;
+      }
+      
+    .modal-content > div{
+        text-align: right;
+      }
+      
+    .close {
+        background-color: rgb(175, 175, 175);
+        border-radius: 50%;
+        width: 35px;
+        height:35px;
+        border: 2px solid rgb(37, 37, 37);
+      }

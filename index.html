@@ -8,13 +8,59 @@
     </head>
     <body>
         <div id="lox">
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <h1>Здравствуй, читатель!</h1>
-            <p>Эта читалка была сделана, чтобы Вы могли погрузиться в мир фантазий.<br>
-                 Также здесь есть анализ персонажей из Ваших любимых произведений.<br> Хорошего прочтения!</p>
             <br>
-            <div><a href="pages/catalogue.html" id="mainButton">Начнём!</a></div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1>Каталог историй</h1>
+            <br><br><br>
+            <div class="container">
+                <div>
+                    <button id="mainButton"><a><img src=""><p>1</p></a></button>
+                    <button id="mainButton"><a><img src=""><p>2</p></a></button>
+                    <button id="mainButton"><a><img src=""><p>3</p></a></button>
+                </div>
+                <div>
+                    <button id="mainButton"><a ><img src=""><p>4</p></a></button>
+                    <button id="mainButton"><a ><img src=""><p>5</p></a></button>
+                    <button id="mainButton"><a ><img src=""><p>6</p></a></button>
+                </div>
+            </div>
+            <br>
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <button class="close">X</button>
+                    </div>
+                    <br>
+                    <h1>Здравствуй, читатель!</h1>
+                    <p>Эта читалка была сделана, чтобы Вы могли погрузиться в мир фантазий.
+                    Также здесь есть анализ персонажей из Ваших любимых произведений.
+                    Хорошего прочтения!</p>
+                </div>
+            </div>
+            
         </div>
+
+        
     </body>
+    <script>
+        const modal = document.querySelector('#modal');
+        const close = document.querySelector('.close');
+
+        window.onload = function () {
+        modal.style.display = 'block';
+        };
+
+        close.onclick = function () {
+        modal.style.display = 'none';
+        };
+
+        window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+        };
+        
+    </script>
 </html>
