@@ -1,0 +1,23 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    *{
+        font-family: "Bellota Text", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    #lox{
+        background-image: linear-gradient(to top, rgba(94, 52, 18, 1), rgb(207, 168, 95));
+        text-align: center;
+    }
+    
+    #mainButton{
+        color: white;
+        text-shadow: black 2px 2px 2px;
+        text-decoration: none;
+        border: 2px solid rgba(94, 52, 18, 1);
+        border-radius: 15%;
+        background-color: rgb(207, 168, 95);
+        padding: 10px;
+        /*margin: 100px;
+        margin-bottom: 1000%;*/
+    }
