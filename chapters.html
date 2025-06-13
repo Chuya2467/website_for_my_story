@@ -21,8 +21,7 @@
         <div id="lox">
             <br>
             
-            <h1>Тест чтения</h1>
-            <pre id="output">Загрузка...</pre>
+            <a href="story pages/chapter1.html">Chapter 1</a>
             
             
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -34,13 +33,5 @@
         
     </body>
     <script>
-        fetch('text.txt')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('output').textContent = data;
-      })
-      .catch(err => {
-        document.getElementById('output').textContent = 'Ошибка: ' + err;
-      });
     </script>
 </html>
