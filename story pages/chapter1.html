@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Пусть так
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <ul class="header_content">
+                <a href="index.html">Об истории</a>
+                <a href="about_website.html">О сайте</a>
+                <a href="chapters.html">Главы</a>
+                <a href="">Персонажи</a>
+                <a href="">Экстры</a>
+                <a href="">Настройки</a>
+            </ul>
+        </div>
+
+        <div id="lox">
+            <br>
+            
+            <h1>Глава 1</h1>
+            <pre id="output">Загрузка...</pre>
+            
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            <br>
+            
+        </div>
+
+        
+    </body>
+    <script>
+        fetch('Глава 1.txt')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('output').textContent = data;
+      })
+      .catch(err => {
+        document.getElementById('output').textContent = 'Ошибка: ' + err;
+      });
+    </script>
+</html>
