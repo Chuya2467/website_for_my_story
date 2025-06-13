@@ -2,8 +2,8 @@
     
     :root{
         --primary-color: rgb(37, 37, 37);
-        --bg-dark: blueviolet;
-        --bg-medium: rgb(241, 28, 128);
+        --bg-dark: rgb(102, 102, 102);
+        --bg-medium: rgb(56, 56, 56);
     }
 
     *{
@@ -26,9 +26,13 @@
         border-radius: 2%;
     }
 
-    .header_content li{
+    .header_content a{
         display: inline-flex;
-        margin: 2%;
+        padding: 2%;
+    }
+
+    .header_content :hover{
+        border-bottom: 2px solid white;
     }
 
     #lox{
@@ -41,37 +45,35 @@
         width: 70%;
     }
     
-    /*#mainButton{
-        color: white;
-        text-shadow: black 2px 2px 2px;
-        text-decoration: none;
-        border: 2px solid rgb(37, 37, 37);
-        border-radius: 15%;
-        background-color: rgb(175, 175, 175);
-        padding: 10px;
-        margin: 20px;
-    }*/
+    #greeting{
+        margin: 5%;
+        
+    }
 
-      body{
+    body{
         background-color: var(--bg-medium);
         overflow: auto;
-      }
+    }
 
-      .container{
+    .container{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto auto 100px;
-      }
+    }
 
-      .container > #image{
+    .container > #image{
         grid-row: span 2;
-      }
-      .container > div > img{
+    }
+
+    .container > div > img{
         height: 100%;
         width: 100%;
-      }
+    }
 
-      .container > div{
+    .container > div{
         margin: 2%;
-        /*border: 2px solid red;*/
-      }
+    }
+
+    #emoji{
+        width: 10%;
+    }
