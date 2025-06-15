@@ -1,9 +1,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
     
     :root{
-        --primary-color: rgb(37, 37, 37);
-        --bg-dark: rgb(102, 102, 102);
-        --bg-medium: rgb(56, 56, 56);
+        --main-color: rgb(37, 37, 37);
+        --bg-dark: rgb(56, 56, 56);
+        --bg-medium: rgb(102, 102, 102);
         --text-color: #eeeeff;
     }
 
@@ -22,7 +22,7 @@
 
         width: 100%;
         height: auto;
-        background-color: var(--bg-dark);
+        background-color: var(--bg-medium);
         text-align: right;
         border-radius: 2%;
     }
@@ -37,7 +37,7 @@
     }
 
     #lox{
-        background-color: var(--primary-color);
+        background-color: var(--main-color);
         text-align: center;
         color: var(--text-color);
         position: relative;
@@ -52,7 +52,7 @@
     }
 
     body{
-        background-color: var(--bg-medium);
+        background-color: var(--bg-dark);
         overflow: auto;
     }
 
@@ -96,4 +96,28 @@
         text-align: left;
         margin: 5%;
         line-height: 20px;
+    }
+
+    #buttons_for_chapter_navigation{
+        list-style-type: none;
+        width: 100%;
+        display: inline-flex;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #back_button{
+        border: 2px solid var(--bg-medium);
+        background-color: var(--bg-dark);
+        width: 30%;
+        margin-right: 20%;
+        padding: 1%;
+    }
+
+    #next_button{
+        border: 2px solid var(--bg-medium);
+        background-color: var(--bg-dark);
+        width: 30%;
+        margin-left:20%;
+        padding: 1%;
     }
