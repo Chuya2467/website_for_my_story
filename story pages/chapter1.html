@@ -20,6 +20,9 @@
 
         <div id="lox">
             <br>
+
+            <button disabled> < Предыдущая глава</button>
+            <button>Следующая глава > </button>
             
             <h1>Глава 1</h1>
             <div id="output">Загрузка...</div>
@@ -34,7 +37,7 @@
         fetch('Глава 1_1.txt')
         .then(res => res.text())
         .then(text => {
-            const formattedText = text.replace(/\n/g, '<br>')
+            const formattedText = text.replace(/ '\n' /g, '<br>')
         });
         
          document.getElementById('output').innerHTML = formattedText;
