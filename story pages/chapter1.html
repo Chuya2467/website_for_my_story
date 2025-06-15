@@ -37,7 +37,7 @@
         fetch('Глава 1_1.txt')
         .then(res => res.text())
         .then(text => {
-            const formattedText = text.split('\n').join('<br>').split('\t').join('&nbsp;')
+            const formattedText = text.split('\n').join('<br>').split('\t').join('&emsp;')
             document.getElementById('output').innerHTML = formattedText;
         });
 
