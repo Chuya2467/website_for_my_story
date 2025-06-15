@@ -79,16 +79,15 @@
         width: 10%;
     }
 
-    .chapters > li{
+    .chapters > li > a{
+        display: block;
         border: 1px solid var(--text-color);
-        list-style-type: none;
-        
         padding: 2%;
         margin: 2%;
-        
     }
 
     .chapters{
+        list-style-type: none;
         padding-left: 0;
         margin-left: 0;
     }

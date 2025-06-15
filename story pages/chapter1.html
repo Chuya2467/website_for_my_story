@@ -22,7 +22,7 @@
             <br>
             
             <h1>Глава 1</h1>
-            <pre><div id="output">Загрузка...</div></pre>
+            <div id="output">Загрузка...</div>
             <!-- works? -->
             
             <br><br><br><br><br><br><br><br><br><br>
@@ -32,12 +32,14 @@
     </body>
     <script>
         fetch('Глава 1_1.txt')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('output').textContent = data;
-      })
-      .catch(err => {
-        document.getElementById('output').textContent = 'Ошибка: ' + err;
-      });
+        .then(res => res.text())
+        .then(text => {
+            const formattedText = text.replace(/\n/g, '<br>')})
+        .then(formattedText => {
+            document.getElementById('output').innerHTML = formattedText;
+        })
+        .catch(err => {
+            document.getElementById('output').textContent = 'Ошибка: ' + err;
+        });
     </script>
 </html>
