@@ -95,6 +95,5 @@
     #output{
         text-align: left;
         margin: 5%;
-        border: 1px solid green;
-        line-height: 30px;
+        line-height: 20px;
     }
