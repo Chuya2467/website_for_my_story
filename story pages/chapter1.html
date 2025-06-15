@@ -38,6 +38,7 @@
         .then(res => res.text())
         .then(text => {
             const formattedText = text.split('\n').join('<br>')
+            formattedText = text.split('\t').join('&nbsp;')
             document.getElementById('output').innerHTML = formattedText;
         });
 
