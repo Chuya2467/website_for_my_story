@@ -34,12 +34,9 @@
         fetch('Глава 1_1.txt')
         .then(res => res.text())
         .then(text => {
-            const formattedText = text.replace(/\n/g, '<br>')})
-        .then(formattedText => {
-            document.getElementById('output').innerHTML = formattedText;
-        })
-        .catch(err => {
-            document.getElementById('output').textContent = 'Ошибка: ' + err;
+            const formattedText = text.replace(/\n/g, '<br>')
         });
+        
+         document.getElementById('output').innerHTML = formattedText;
     </script>
 </html>
