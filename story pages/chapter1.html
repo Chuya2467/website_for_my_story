@@ -34,12 +34,15 @@
         </div>
     </body>
     <script>
+        const formattedText = "";
+
         fetch('Глава 1_1.txt')
         .then(res => res.text())
         .then(text => {
-            const formattedText = text.replace(/ '\n' /g, '<br>')
-            document.getElementById('output').innerHTML = formattedText;
+            formattedText = text.split('\n').join('<br>')
         });
+
+        document.getElementById('output').innerHTML = formattedText;
         
          
     </script>
