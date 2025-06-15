@@ -38,8 +38,9 @@
         .then(res => res.text())
         .then(text => {
             const formattedText = text.replace(/ '\n' /g, '<br>')
+            document.getElementById('output').innerHTML = formattedText;
         });
         
-         document.getElementById('output').innerHTML = formattedText;
+         
     </script>
 </html>
