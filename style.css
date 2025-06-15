@@ -4,13 +4,14 @@
         --primary-color: rgb(37, 37, 37);
         --bg-dark: rgb(102, 102, 102);
         --bg-medium: rgb(56, 56, 56);
+        --text-color: #eeeeff;
     }
 
     *{
         font-family: "Bellota Text", sans-serif;
         font-weight: 700;
         font-style: normal;
-        color: white;
+        color: var(--text-color);
         text-decoration: none;
     }
 
@@ -32,13 +33,13 @@
     }
 
     .header_content :hover{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid var(--text-color);
     }
 
     #lox{
         background-color: var(--primary-color);
         text-align: center;
-        color: white;
+        color: var(--text-color);
         position: relative;
         z-index: 0;
         left: 15%;
@@ -76,4 +77,18 @@
 
     #emoji{
         width: 10%;
+    }
+
+    .chapters > li{
+        border: 1px solid var(--text-color);
+        list-style-type: none;
+        
+        padding: 2%;
+        margin: 2%;
+        
+    }
+
+    .chapters{
+        padding-left: 0;
+        margin-left: 0;
     }
