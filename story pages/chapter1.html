@@ -21,7 +21,7 @@
         <div id="lox">
 
             <ul id="buttons_for_chapter_navigation">
-                <a href="" id="back_button" style="background-color: rgb(37, 37, 37); border: 0px solid rgb(37, 37, 37); color: rgb(102, 102, 102);"> < Предыдущая глава </a>
+                <a href="" id="back_button" style="background-color: var(--main-color); border: 0px solid var(--main-color); color: var(--bg-medium);"> < Предыдущая глава </a>
                 <a href="chapter2.html" id="next_button">Следующая глава > </a>
             </ul>
             
@@ -29,7 +29,7 @@
             <div id="output">Загрузка...</div>
             
             <ul id="buttons_for_chapter_navigation">
-                <a href="" id="back_button" style="background-color: rgb(37, 37, 37); border: 0px solid rgb(37, 37, 37); color: rgb(102, 102, 102);"> < Предыдущая глава </a>
+                <a href="" id="back_button" style="background-color: var(--main-color); border: 0px solid var(--main-color); color: var(--bg-medium);"> < Предыдущая глава </a>
                 <a href="chapter2.html" id="next_button">Следующая глава > </a>
             </ul>
             <br>
@@ -37,7 +37,7 @@
         </div>
     </body>
     <script src="../font-changer.js" defer></script>
-    <script src="theme-changer.js" defer></script>
+    <script src="../theme-changer.js" defer></script>
     <script>
         fetch('Глава 1.txt')
         .then(res => res.text())

@@ -1,5 +1,5 @@
 
-const themes = ['light', 'dark'];
+const themes = ['light', 'dark', 'purple'];
 
 function applyTheme(name) {
   themes.forEach(t => body.classList.remove(`${t}-theme`));
