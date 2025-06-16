@@ -144,3 +144,10 @@
     body.mono-font {
         font-family: "Roboto Mono", monospace;
     }
+
+    .settings_for_appearance{
+        background-color: var(--bg-dark);
+        padding: 1%;
+        width: 15%;
+        margin: 1%;
+    }
