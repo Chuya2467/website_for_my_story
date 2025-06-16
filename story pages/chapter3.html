@@ -21,16 +21,16 @@
         <div id="lox">
 
             <ul id="buttons_for_chapter_navigation">
-                <a href="" id="back_button" style="background-color: rgb(37, 37, 37); border: 0px solid rgb(37, 37, 37); color: rgb(102, 102, 102);"> < Предыдущая глава </a>
-                <a href="chapter2.html" id="next_button">Следующая глава > </a>
+                <a href="chapter2.html" id="back_button"> < Предыдущая глава </a>
+                <a href="chapter4.html" id="next_button">Следующая глава > </a>
             </ul>
             
-            <h1>Глава 1</h1>
+            <h1>Глава 3</h1>
             <div id="output">Загрузка...</div>
             
             <ul id="buttons_for_chapter_navigation">
-                <a href="" id="back_button" style="background-color: rgb(37, 37, 37); border: 0px solid rgb(37, 37, 37); color: rgb(102, 102, 102);"> < Предыдущая глава </a>
-                <a href="chapter2.html" id="next_button">Следующая глава > </a>
+                <a href="chapter2.html" id="back_button"> < Предыдущая глава </a>
+                <a href="chapter4.html" id="next_button">Следующая глава > </a>
             </ul>
             <br>
             
@@ -38,7 +38,7 @@
     </body>
     <script src="../font-changer.js" defer></script>
     <script>
-        fetch('Глава 1.txt')
+        fetch('Глава 3.txt')
         .then(res => res.text())
         .then(text => {
             const formattedText = text.split('\n').join('<br><br>').split('\t').join('&emsp;')
